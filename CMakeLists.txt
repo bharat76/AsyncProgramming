@@ -1,0 +1,8 @@
+project(Async)
+cmake_minimum_required(VERSION 3.20.0)
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup()
+set(CMAKE_CXX_FLAGS "-fcoroutines")
+add_definitions(-DASIO_STANDALONE)
+add_subdirectory(src)
+message(STATUS ${CONAN_LIBS})

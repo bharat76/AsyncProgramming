@@ -1,0 +1,10 @@
+[requires]
+glog/0.6.0
+poco/1.12.4
+libevent/2.1.12
+asio/1.24.0
+libcurl/7.87.0
+
+[generators]
+cmake
+
